@@ -373,6 +373,9 @@ main > section > aside {
     .gallery-item {
         flex: 1 1 100%; /* Для мобильных: 1 изображение в ряд */
     }
+    .advertisement{
+        display: none;
+    }
 }
 .like-button {
     display: flex;
@@ -613,6 +616,32 @@ main > section > aside {
 .card:hover::after {
     opacity: 1;
     transform: translate(10px, 10px); /* Плавное перемещение к центру */
+}
+@media (max-width: 768px) {
+    .useinf{
+        display: none;
+    }
+}
+.map-container {
+    position: relative;
+    width: 100%;  /* Ширина на весь экран */
+    height: 0;
+    padding-bottom: 50%;  /* Пропорция 16:9 (высота зависит от ширины) */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Играет роль адаптивности */
+    height: 100%;  /* Соответствует пропорциям контейнера */
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .map-container {
+        padding-bottom: 75%;  /* Изменить соотношение сторон для мобильных устройств */
+    }
 }
 footer {
     position: relative;
