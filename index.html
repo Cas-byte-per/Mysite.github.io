@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Мебельный магазин "Практика"</title>
-        <link rel="icon" type="image/png" href="фавикон.png" />
+        <link rel="icon" type="image/png" href="/фавикон.png" />
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,7 +122,7 @@
                 </section>                
                 <div class="useinf">
                     <div class="header-useinf" >
-                        <h1 class = "about"><p>Полезные советы</p></h1>
+                        <h1 class = "about" class = "about-inf"><p>Полезные советы</p></h1>
                     </div>
                     <div class="cards">
                         <div class="card card-1">
@@ -133,7 +133,6 @@
                             <h2>Как правильно спланировать ремонт?</h2>
                             <p>Создайте подробный план с поэтапными действиями, начиная с самого важного. Рассчитайте приблизительный бюджет, 
                                 учитывая возможные дополнительные расходы. Оставьте резерв в 10-15% от общей суммы на непредвиденные расходы.</p>
-                            <button>Подробнее</button>
                         </div>
                         </div>
                         <div class="card card-2">
@@ -143,7 +142,6 @@
                         <div class="card-content">
                             <h2>Как выбрать качественные материалы?</h2>
                             <p>При выборе стройматериалов учитывайте их долговечность, безопасность и устойчивость к износу. Проконсультируйтесь со специалистами или почитайте отзывы, чтобы убедиться в качестве товара.</p>
-                            <button>Подробнее</button>
                         </div>
                     </div>
                         <div class="card card-3">
@@ -153,21 +151,22 @@
                         <div class="card-content">
                             <h2>Какие этапы ремонта нельзя пропускать?</h2>
                             <p>Следование этапам ремонта поможет избежать переделок и лишних затрат. Начните с черновых работ: проводка, трубы, штукатурка, а затем переходите к чистовой отделке.</p>
-                            <button>Подробнее</button>
                         </div>
                         </div>
                     </div>
                 </div>
-                    <h2  id="services">Наш офис на карте</h2>
-                    <!-- Встраивание карты Google Maps через iframe -->
+                <h2 id="services" class = "about" >Наш офис на карте</h2>
+                <!-- Встраивание карты Google Maps через iframe -->
+                <div class="map-container">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096176!2d144.95373531589108!3d-37.8162793797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773f3e7e18d469!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1619480813159!5m2!1sen!2sau" 
                         width="600" 
-                        height="450" 
+                        height="250" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy">
                     </iframe>
+                </div>                
             </main>
         </div>
         <footer>
